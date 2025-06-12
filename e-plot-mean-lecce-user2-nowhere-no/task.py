@@ -70,9 +70,6 @@ ani = matplotlib.animation.FuncAnimation(fig, update, frames=len(frames), interv
 output_gif = str(os.path.basename(tif_file))
 ani.save(output_gif, writer="pillow", fps=2)
 
-print(f"Animation saved as {output_gif}")# from minio import Minio
-
-
 output_gif_path = os.path.join(conf_data_path, output_gif)
 shutil.copy(output_gif, output_gif_path)
 
