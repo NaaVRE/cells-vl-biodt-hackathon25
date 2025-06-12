@@ -39,6 +39,9 @@ output_gif = 'animated.gif'
 output_animated_path = os.path.join(conf_data_path, output_gif)
 shutil.copy('animated.gif', output_animated_path)
 
+file_output_animated_path = open("/tmp/output_animated_path_" + id + ".json", "w")
+file_output_animated_path.write(json.dumps(output_animated_path))
+file_output_animated_path.close()
 file_output_gif = open("/tmp/output_gif_" + id + ".json", "w")
 file_output_gif.write(json.dumps(output_gif))
 file_output_gif.close()
