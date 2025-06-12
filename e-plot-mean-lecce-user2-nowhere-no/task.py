@@ -1,5 +1,6 @@
 import shutil
 import rioxarray
+import matplotlib
 import os
 
 import argparse
@@ -41,7 +42,6 @@ for tif_file in merged_tifs:
     print(tif_file)
     data_mean = rioxarray.open_rasterio(tif_file)
     frames.append(data_mean[0])    
-
 
 
 fig, ax = matplotlib.pyplot.subplots(figsize=(10, 8))
