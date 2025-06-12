@@ -67,7 +67,7 @@ def update(frame_idx):
     )
     return img
 
-ani = matplotlib.animation.FuncAnimation(fig, update, frames=len(frames), interval=1000, blit=False)
+ani = animation.FuncAnimation(fig, update, frames=len(frames), interval=1000, blit=False)
 output_gif = str(os.path.basename(tif_file))
 ani.save(output_gif, writer="pillow", fps=2)
 
