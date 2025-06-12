@@ -1,6 +1,6 @@
+import matplotlib
 import shutil
 import rioxarray
-import matplotlib
 import os
 
 import argparse
@@ -34,7 +34,8 @@ conf_y = conf_y = 0.95
 conf_arrow_length = conf_arrow_length = 0.1
 conf_data_path = conf_data_path = '/tmp/data/'
 
-print(merged_tifs)
+matplotlib
+
 frames = []
 
 
@@ -44,7 +45,7 @@ for tif_file in merged_tifs:
     frames.append(data_mean[0])    
 
 
-fig, ax = matplotlib.pyplot.subplots(figsize=(10, 8))
+fig, ax = plt.subplots(figsize=(10, 8))
 img = frames[0].plot(ax=ax, cmap="Spectral", add_colorbar=True)
 ax.grid(True, linestyle="--", linewidth=0.5)
 
