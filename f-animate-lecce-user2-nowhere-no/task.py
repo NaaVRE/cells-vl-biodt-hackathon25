@@ -36,7 +36,7 @@ except EOFError:
 
 frames[0].save('animated.gif', save_all=True, append_images=frames[1:], duration=200, loop=0)
 output_gif = 'animated.gif'
-output_animated_path = os.path.join(conf_data_path, output_gif)
+output_animated_path = str(os.path.join(conf_data_path, output_gif))
 shutil.copy('animated.gif', output_animated_path)
 
 file_output_animated_path = open("/tmp/output_animated_path_" + id + ".json", "w")
