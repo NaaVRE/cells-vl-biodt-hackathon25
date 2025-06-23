@@ -30,6 +30,7 @@ folder_path = None
 tif_url = None
 download_path = None
 
+print(df_hab)
 
 param_habitat_name =  'Ruderal habitats'
 habitat_type = param_habitat_name.replace(' ','_').lower()
