@@ -10,10 +10,6 @@ arg_parser = argparse.ArgumentParser()
 arg_parser.add_argument('--id', action='store', type=str, required=True, dest='id')
 
 
-arg_parser.add_argument('--hb', action='store', type=int, required=True, dest='hb')
-
-arg_parser.add_argument('--np', action='store', type=int, required=True, dest='np')
-
 arg_parser.add_argument('--shp_path', action='store', type=int, required=True, dest='shp_path')
 
 
@@ -22,8 +18,6 @@ print(args)
 
 id = args.id
 
-hb = args.hb
-np = args.np
 shp_path = args.shp_path
 
 
